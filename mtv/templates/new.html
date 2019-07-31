@@ -1,0 +1,124 @@
+ <!--유진이 맛집-->
+
+<html lang="en-us">
+{% load staticfiles %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+<meta charset="utf-8">
+<title>유바 모험!</title>
+
+
+
+<style type="text/css">
+	@font-face { font-family: 'GyeonggiBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff'); font-weight: normal; font-style: normal; }
+	@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
+    
+    
+    body{
+        margin: 0;
+        width: 100%;
+        background-color:rgb(254,236,251);
+        text-align: center;
+        font-family:'GyeonggiBatang';
+        font-size:60px;
+    }
+    header{
+        margin: 0;
+        width: 100%;
+        background-color:rgb(255,255,255);
+        text-align: center;
+        font-family:'yg-jalnan';
+        padding: 6px;
+    }
+    header > h2{
+        font-size: 50px;
+        
+    } 
+
+
+.but{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	padding-left:150px;
+    padding-right:150px;
+		
+		
+		
+}
+
+.button {
+  /* Green */
+  border: none;
+  
+  padding: 20px;
+  
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  
+  cursor: pointer;
+  border-radius: 18px;
+  width:450px;
+  background-color: white;
+  margin: 50px 150px;
+  color: pink;
+  font-family:'yg-jalnan';
+}
+
+
+footer {
+    padding-top: 10px;
+   position:fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: white;
+   color: white;
+   justify-content: flex-start;
+   align-content:flex-start;
+}
+footer > img {
+    width:100px;
+     justify-content: flex-start;
+     align-content:flex-start;
+}
+
+</style>
+
+	<header id = "page-top">
+	  <h2>♡ 유바 모험 ♡</h2>
+	  
+	</header>
+</head>
+
+
+
+<body>
+    <div clas = > <p> 유진이가 가장 좋아하는 동국대 맛집은?</p></div>
+
+    <div class = "but">    
+        <a href="/urlz/new_2"><button class="button">병천 순대 동막골</button></a>
+        <a href="/urlz/wrong_"><button class="button">진땡이 순대국</button></a>
+        <a href="/urlz/wrong_"><button class="button">가마솥 순대국</button></a>
+        <a href="/urlz/wrong_"><button class="button">큰 할매 순대국</button></a>
+
+    </div>
+    
+</body>
+
+
+  <footer>
+        
+        <img src="{% static 'images/sm.png' %}">
+</footer>
+    
+
+
+
+</html>
+

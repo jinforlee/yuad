@@ -1,0 +1,163 @@
+<!--유진이 소울푸드-->
+
+<html lang="en-us">
+{% load staticfiles %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+<meta charset="utf-8">
+<title>유바 모험!</title>
+
+
+
+<style type="text/css">
+	@font-face { font-family: 'GyeonggiBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff'); font-weight: normal; font-style: normal; }
+	@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
+    
+    
+    body{
+        margin: 0;
+        width: 100%;
+        background-color:rgb(254,236,251);
+        text-align: center;
+        font-family:'GyeonggiBatang';
+        font-size:60px;
+    }
+    header{
+        margin: 0;
+        width: 100%;
+        background-color:rgb(255,255,255);
+        text-align: center;
+        font-family:'yg-jalnan';
+        padding: 6px;
+    }
+    header > h2{
+        font-size: 50px;
+        
+    } 
+
+
+.but{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	padding-left:100px;
+    padding-right:100px;
+		
+		
+		
+}
+.image {
+    width: 350;
+}
+
+.button {
+  /* Green */
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  
+  cursor: pointer;
+  border-radius: 18px;
+  width:350px;
+  background-color: white;
+  margin: 50px 10px;
+  color: pink;
+  font-family:'yg-jalnan';
+}
+.flex-container{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-content: center;
+		justify-content: center;
+	
+		}
+.flex-container > div {
+    	margin: 30px;
+		width: 400px;
+		justify-content: center;
+		align-items: center;
+		background-color: pink;
+		font-size: 17px;
+		padding : 30px;
+}
+
+
+
+footer {
+   padding-top: 10px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: white;
+   color: white;
+   
+   float: left;
+}
+footer > img {
+    width:100px;
+     justify-content: flex-start;
+     align-content:flex-start;
+}
+
+
+</style>
+
+	<header id = "page-top">
+	  <h2>♡ 유바 모험 ♡</h2>
+	  
+	</header>
+</head>
+
+
+
+<body>
+    <div> <p> 유진이의 소울푸드는 무엇일까?</p></div>
+    <div class="flex-container"> 
+      <div>
+         <img src="{% static 'images/ddeok.jpg' %}"/ class="image">
+         <a href="/urlz/new_3"><button class="button">떡볶이</button></a>
+      </div>
+      
+       <div>
+         <img src="{% static 'images/lob.jpg' %}"/ class="image">
+         <a href="/urlz/wrong_1"><button class="button">녹차를 먹인 <br>랍스터</button></a>
+
+      </div>
+       
+       
+        <div>
+         <img src="{% static 'images/pua.jpg' %}"/ class="image">
+         <a href="/urlz/wrong_1"><button class="button">캐비어가 올라간 푸아그라</button></a>
+
+      </div>
+       
+        <div>
+         <img src="{% static 'images/steak.jpg' %}"/ class="image">
+         <a href="/urlz/wrong_1"><button class="button">트러플을 곁드린 스테이크</button></a>
+
+      </div>
+       
+       
+
+    </div>
+
+</body>
+
+<footer>
+    
+<img src="{% static 'images/sm.png' %}">
+<img src="{% static 'images/sm.png' %}">   
+    
+    
+</footer>
+   
+
+
+</html>
+

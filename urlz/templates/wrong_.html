@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+{% load staticfiles %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+<meta charset="utf-8">
+<title>유바 모험!</title>
+
+
+
+<style type="text/css">
+	@font-face { font-family: 'GyeonggiBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff'); font-weight: normal; font-style: normal; }
+	@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
+    
+    
+    body{
+        
+        
+        background: url("{% static 'images/sun.jpg' %}");
+        background-repeat: repeat;
+        
+        text-align: center;
+        font-family:'GyeonggiBatang';
+        font-size:40px;
+    }
+   
+    header{
+        margin-left: 200px;
+        margin-right: 200px;
+        font-size:70px;
+        color: red;
+        text-align: center;
+        font-family:'yg-jalnan';
+        padding: 6px;
+    }
+    header > h2{
+        font-size: 50px;
+        
+    } 
+    
+
+.con {
+     display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-content: center;
+		justify-content: center;
+		
+}
+.con > div {
+    background-color: white;
+		margin-top: 100px;
+		padding: 50px;
+		height : 700px;
+		opacity: 0.8;
+        filter: alpha(opacity=60);
+        color: black;
+        font-weight: bold;
+}
+	
+.button {
+  /* Green */
+  border: none;
+  
+  padding: 20px;
+  
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  
+  cursor: pointer;
+  border-radius: 18px;
+  width:450px;
+  background-color: white;
+  
+  color: pink;
+  
+  font-family:'yg-jalnan';
+}
+img{
+    margin : 100px;
+    width:800px;
+    height:500px;
+}
+
+
+
+/*.bg {
+  background-image: "{% static 'images/sun.jpg' %}";
+  background-repeat: repeat;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}*/
+
+</style>
+</head>
+
+    
+<header>
+    <h1>병천 순대국 외안머거??</h1>
+</header>
+<body>
+<div class ="con">
+    
+<a href=https://m.store.naver.com/places/detailMap?id=20847989><img src = "{% static 'images/map.PNG' %}" ></a>
+
+<div>
+<p>병천 순대국 맛있습니다. 건더기 튼실하고  </p>
+<p>메뉴도 오지게 많습니다!! </p><p>사실 저는 순대국만 먹어봤어요. </p>
+<p>김치도 맛있고 가격도 저렴하고 손님도 없고,,,</p>
+</div>
+<a href="{% url 'index' %}"><button class="button">다시 도전하기!</button></a>
+</div>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    {% load staticfiles %}
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url({% static 'images/ghost1.jpg' %});
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<div class="bg"></div>
+
+<a href="/mtv/index"><p>귀신 너무 무서움 후덜덜 저 귀신사진 무서워서 검토 못했어요 잘 나오고 있겠죠..?</p></a>
+<audio src="{% static '/scream.mp3' %}" controls autoplay>
+
+</body>
+</html>

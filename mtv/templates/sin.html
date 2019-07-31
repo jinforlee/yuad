@@ -1,0 +1,90 @@
+<html lang="en-us">
+{% load staticfiles %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+<meta charset="utf-8">
+<title>유바 모험!</title>
+
+
+
+<style type="text/css">
+	@font-face { font-family: 'GyeonggiBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff'); font-weight: normal; font-style: normal; }
+	@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
+    
+    
+    body{
+        margin: 0;
+        width: 100%;
+        background-color:rgb(254,236,251);
+        text-align: center;
+        font-family:'GyeonggiBatang';
+    }
+   
+.but{
+    display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-content: center;
+		justify-content: center;
+		
+		
+		
+}
+
+.button {
+  /* Green */
+  border: none;
+  
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 18px;
+  width:400px;
+  background-color: white;
+  margin: 50px;
+  color: pink;
+  font-family:'yg-jalnan';
+}
+
+
+
+</style>
+
+</head>
+
+
+
+    <body>
+    
+
+   
+    
+    
+    <video src="{% static '/sinn.mp4' %}" width="1020" height="755" controls autoplay>
+    
+    </video>
+    
+    <div class = "but">    
+        <a href="{% url 'new' %}"><button class="button">할게요..</button></a>
+        
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+</html>
